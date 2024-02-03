@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(79, 79, 79);
+}
+.container-content {
+  float: right;
+  margin-left: 250px;
+}
+/* navbar design */
+.nav {
+  background-color: gray;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.navbar-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-top > h1,
+h3 {
+  color: white;
+}
+.image {
+  border: 6px solid #611313;
+  border-radius: 2px;
+  width: 180px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.a-tags-navbar {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: rgb(46, 41, 41);
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  margin: 10px auto;
+  border-radius: 15px;
+  border: none;
+  padding: 4px;
+}
+.a-tags-navbar:hover {
+  background-color: rgb(117, 3, 3);
+}
+/* first-page */
+.home-section {
+  background-color: rgb(79, 79, 79);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.information-first-page {
+  margin: auto 150px;
+  padding: 20px;
+}
+.information-first-page > h1,
+h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.person-name {
+  color: rgb(117, 3, 3);
+  font-size: 28px;
+}
+.about-me-first-page {
+  width: 150px;
+  height: 35px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(46, 41, 41);
+  margin: 10px auto;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.about-me-first-page:hover {
+  background-color: #611313;
+}
+
+/* about-section design */
+.about-section {
+  height: 100vh;
+  background-color: rgb(79, 79, 79);
+}
+.as-heading {
+  text-align: center;
+  color: white;
+}
+.content-left {
+  float: left;
+  padding: 50px;
+  line-height: 50px;
+  width: 40%;
+  margin: 80px auto;
+}
+.content-left p {
+  font-size: 22px;
+  color: white;
+}
+.content-left button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(46, 41, 41);
+  cursor: pointer;
+}
+.content-right {
+  float: right;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 60%;
+  margin: 80px auto;
+}
+.as-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+  margin: 20px auto;
+  background-color: rgb(46, 41, 41);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.as-box h1 {
+  color: rgb(117, 3, 3);
+}
+.as-box p {
+  color: white;
+}
+
+/* education-section-design */
+.education-section {
+  height: 100vh;
+  background-color: rgb(79, 79, 79);
+}
+.es-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 90vh;
+}
+.es-heading {
+  color: white;
+}
+.es-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  border-right: 1px solid white;
+}
+.es-box > .es-year {
+  display: inline-block;
+  background-color: rgb(46, 41, 41);
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+}
+.es-box > h3 {
+  color: rgb(117, 3, 3);
+  margin-top: 5px;
+}
+.es-box > p {
+  margin-top: 5px;
+  text-align: justify;
+}
+
+/* portfolio-section-design */
+.portfolio-section {
+  height: 150vh;
+  background-color: rgb(79, 79, 79);
+}
+.ps-heading {
+  color: white;
+  text-align: center;
+}
+.ps-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 90vh;
+}
+.ps-card {
+  margin: 10px;
+  border: 2px solid slategrey;
+}
+.card-image {
+  width: 344px;
+  height: auto;
+  object-fit: cover;
+}
+.ps-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 10px;
+}
+.ps-description > h1 {
+  color: rgb(117, 3, 3);
+  font-size: 22px;
+}
+.ps-description > .card-buttons {
+  display: flex;
+}
+.ps-description > .card-buttons > button {
+  width: 130px;
+  height: 35px;
+  margin: 5px 10px;
+  background-color: rgb(46, 41, 41);
+  border: 0;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.ps-description > .card-buttons > button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* contact-section-design */
+.contact-section {
+  height: 100vh;
+  background-color: rgb(79, 79, 79);
+}
+.cs-heading {
+  color: white;
+  text-align: center;
+}
+.cs-container {
+  height: 100vh;
+}
+.cs-details {
+  float: left;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  margin: 200px 60px;
+}
+.cs-details > P {
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+}
+.cs-form {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 80px auto;
+}
+.cs-input-field {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(32, 30, 30);
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+}
+.cs-textarea {
+  border-radius: 10px;
+  background-color: rgb(32, 30, 30);
+  margin: 10px;
+  text-align: start;
+  font-size: 15px;
+  padding-left: 180px;
+  width: 500px;
+  border: none;
+}
+.cs-button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  background-color: rgb(46, 41, 41);
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+.cs-button:hover {
+  background-color: #611313;
+}
+footer {
+  display: flex;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+  height: 40px;
+}
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.lfoot {
+  margin: 0 80px;
+  float: left;
+}
+
+.rfoot {
+  margin: 0 80px;
+  float: right;
+}
+.icon {
+  padding: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
